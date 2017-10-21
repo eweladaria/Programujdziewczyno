@@ -1,13 +1,21 @@
-var myName='Ewelina';
-var friends=['Asia','Kasia','Judzia'];
-var a=24;
-var b=11;
-if (a < b){
-console.log('hurra');
-  }
-else {
-  console.log('hehe');
-  }
-for (var i = 0; i < friends.length; i++) {
-  console.log(friends[i])
-}
+'use strict';
+document.addEventListener('DOMContentLoaded', function() {
+  // tutaj będziemy umieszczać kod ze wszystkich zadań
+
+var elementwithDropdown = document.querySelector('.for-dropdown');
+// console.log(elementwithDropdown);
+
+var dropdown = document.querySelector('.dropdown');
+// console.log(dropdown);
+
+elementwithDropdown.addEventListener('mouseover', function() {
+  // console.log('myszka jest tu');
+
+  dropdown.style.display = "block"
+});
+elementwithDropdown.addEventListener('mouseout', function() {
+  // console.log('myszka jest zablokowana');
+  dropdown.style.display = "none"
+});
+
+});
